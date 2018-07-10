@@ -1,0 +1,32 @@
+{
+  "name": "@sodakits/boot",
+  "private": false,
+  "version": "0.0.1",
+  "author": "Project Soda <project-soda@outlook.com>",
+  "description": "Soda Boot Framework",
+  "license": "MIT",
+  "scripts": {
+    "start": "node node/app.js",
+    "build": "node ./node_modules/pkg/lib-es5/bin.js -t latest-win-x64,latest-linux-x64 node/app.js"
+  },
+  "dependencies": {
+    "koa": "^2.5.1"
+  },
+  "devDependencies": {
+    "pkg": "^4.3.3"
+  },
+  "main": "node/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-soda/boot.git"
+  },
+  "keywords": [
+    "sodakits",
+    "soda",
+    "boot"
+  ],
+  "bugs": {
+    "url": "https://github.com/project-soda/boot/issues"
+  },
+  "homepage": "https://github.com/project-soda/boot#readme"
+}
