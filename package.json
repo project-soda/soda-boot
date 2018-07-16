@@ -5,16 +5,6 @@
   "author": "Project Soda <project-soda@outlook.com>",
   "description": "Soda Boot Framework",
   "license": "MIT",
-  "scripts": {
-    "start": "node node/app.js",
-    "build": "node ./node_modules/pkg/lib-es5/bin.js -t latest-win-x64,latest-linux-x64 node/app.js"
-  },
-  "dependencies": {
-    "koa": "^2.5.1"
-  },
-  "devDependencies": {
-    "pkg": "^4.3.3"
-  },
   "main": "node/app.js",
   "repository": {
     "type": "git",
@@ -28,5 +18,17 @@
   "bugs": {
     "url": "https://github.com/project-soda/boot/issues"
   },
-  "homepage": "https://github.com/project-soda/boot#readme"
+  "homepage": "https://github.com/project-soda/boot#readme",
+  "scripts": {
+    "start": "node node/app.js",
+    "build": "node node_modules/pkg/lib-es5/bin.js -t latest-win-x64,latest-linux-x64 node/app.js",
+    "test": "mocha --recursive"
+  },
+  "dependencies": {
+    "koa": "^2.5.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "pkg": "^4.3.3"
+  }
 }
